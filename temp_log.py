@@ -27,7 +27,7 @@ def write_data(f_name, df):
     Write data from log_data to file.
     Clears dataframe df to avoid duplicates.
     """
-    df.to_csv(f_name, mode="w", header=False, index=False)
+    df.to_csv(f_name, mode="a", header=False, index=False)
     return df.iloc[0:0]
 
 
